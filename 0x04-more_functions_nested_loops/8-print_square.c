@@ -3,24 +3,27 @@
 /**
  * print_square - prints a square, followed by a new line;
  * @size: size of the square
+ * Description: Can only use _putchar to print. Use '#' to print square
  */
 void print_square(int size)
 {
-	if (size < 1)
-	{
-		_putchar('\n');
-	}
-       	else
-	{
-		int i, j;
+	int x, y;
 
-		for (i = 0; i < size; i++)
+	y=0;
+
+	if (size < 1)
+		_putchar('\n');
+
+	while (y < size)
+	{
+
+		x = 0;
+		while (x < size)
 		{
-			for (j = 0; j < size; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			_putchar('#');
+			x++;
 		}
+		_putchar('\n');
+		y++;
 	}
 }
