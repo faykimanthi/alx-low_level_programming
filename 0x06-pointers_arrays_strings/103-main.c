@@ -49,7 +49,7 @@ int main(void)
 	res = infinite_add(n, m, r3, 11);
 	if (res == 0)
 	{
-		printf("Error\n")
+		printf("Error\n");
 	}
 	else
 	{
